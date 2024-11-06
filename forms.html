@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My components</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <a href="#">
+          <img
+            src="imagens/perfil.png"
+            alt="Gustavo Henrique Santos Souza"
+            class="perfil-img"
+          />
+        </a>
+        <ul class="main-options">
+          <li class="main-options__items">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="main-options__items">
+            <a href="tipografia.html">Tipografia</a>
+          </li>
+          <li class="main-options__items">
+            <a href="cards.html">Cards</a>
+          </li>
+          <li class="main-options__items">
+            <a href="listas.html">Listas</a>
+          </li>
+          <li class="main-options__items">
+            <a href="forms.html">Formulário</a>
+          </li>
+          <li class="main-options__items">
+            <a href="botoes.html">Botões</a>
+          </li>
+          <li class="main-options__items">
+            <a href="tabelas.html">Tabelas</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>My Components</h1>
+
+        <section>
+            <h2 class="forms-title">Entre em contato</h2>
+            <div class="row">
+                <form action="" class="form-one">
+
+                    <div class="row">
+                        <div>
+                            <label for="name">Nome</label>
+                            <input type="text" class="forms-input" id="name" placeholder="nome completo">
+                        </div>
+
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="text" class="forms-input" id="email" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <label for="mensagem">Digite sua mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="6"></textarea>
+
+                    <input type="submit" value="Enviar" class="btn"></input>
+
+                </form>
+
+                    <address class="form-address">
+                        <p><b>Endereço:</b> 1234 Somewhere Rd. Nashville, TN 00000 United States</p> 
+                        <p><b>Telefone:</b> 000-000-000</p>
+                        <p><b>Email:</b> email@server.com</p>
+                    </address>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="forms-title">Quiz</h2>
+                <form action="" class="form-quiz">
+
+                    <label for="tecnologia">Qual é sua linguagem preferida?</label>
+                    <select name="language" id="tecnologia">
+                        <option value="null">Selecione</option>
+                        <option value="Javascript">Javascript</option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="C#">C#</option>
+                        <option value="Typescript">Typescript</option>
+                    </select>
+
+                    <label>Baixa Prioridade <input type="radio" name="prioridade" value="baixa"></label>
+
+                    <label>Média Prioridade <input type="radio" name="prioridade" value="media"></label>
+
+                    <label>Alta Prioridade <input type="radio" name="prioridade" value="alta"></label>
+
+                    <label><input type="checkbox" name="copy" value="true"> Envie-me uma cópia</label>
+
+                    <label><input type="checkbox" name="human" value="true"> Sou um humano</label>
+
+                    <div class="row">
+                        <input type="submit" value="Limpar" class="btn delete"></input>
+                        <input type="submit" value="Enviar" class="btn"></input>
+                    </div>
+
+                </form>
+
+        </section>
+    </main>
+  </body>
+</html>
